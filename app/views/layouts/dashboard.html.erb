@@ -13,10 +13,8 @@
   <body>
     <div class="app" id="app">
       <div id="content" class="app-content box-shadow-z0" role="main">
-        <div class="app-header navbar-md white box-shadow" id="hidden">
-          <%= render 'shared/navbar' %>
-          <%= render 'shared/flashes' %>
-        </div>
+        <%= render 'shared/navbar' %>
+        <%= render 'shared/flashes' %>
         <div ui-view class="app-body" id="view">
         <%= yield %>
         </div>

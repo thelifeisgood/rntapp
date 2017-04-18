@@ -1,2 +1,11 @@
-  <%= render "shared/backend/navbar_1" %>
-  <%= render "shared/backend/navbar_2" %>
+
+<% if content_for?(:nonavbar) %>
+  <%= yield(:nonavbar) %>
+<% elsif content_for?(:navbar1) %>
+  <%= yield(:navbar1) %>
+    <%= render "shared/backend/navbar_1" %>
+<% else %>
+    <%= render "shared/backend/navbar_1" %>
+    <%= render "shared/backend/navbar_2" %>
+<% end %>
+
