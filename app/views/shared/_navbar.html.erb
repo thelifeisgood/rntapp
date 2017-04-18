@@ -1,34 +1,6 @@
 <!-- Different navigation if login or not -->
 <% if user_signed_in? %>
-
+      <%= render "shared/backend/navbar" %>
 <% else %>
-<div class="application__header-container">
-  <div class="application__header">
-    <div class="visitor-header">
-      <div class="active">
-        <!-- Logo -->
-        <%= link_to root_path, class: "header__logo header__logo--large" do %>
-        <% end %>
-        <!---->
-      </div>
-      <!---->
-      <ul class="header__account">
-        <li class="header__account-item header__signup">
-          <%= link_to t(".sign_up", default: "Créer un compte"), new_user_registration_path, class: "header__signin-button" %>
-        </li>
-
-        <li class="header__account-item header__signin">
-          <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "header__signin-button" %>
-        </li>
-
-        <!---->
-        <li class="header__account-item header__help">
-          <div class="help__menu">
-            <%= link_to t(".sign_in", default: "Aide"), bientot_path, class: "header__link" %>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+      <%= render "shared/frontend/navbar" %>
 <% end %>
