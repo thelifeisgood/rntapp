@@ -1,0 +1,30 @@
+<div class="row padding">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="box">
+
+      <div class="box-header">
+        <h2>Editer un bailleur</h2>
+        <small>Remplissez les champs pour editer le bailleur.</small>
+      </div>
+
+      <div class="box-body dker">
+        <div class="padding">
+
+          <form ui-jp="parsley">
+            <div class="box">
+              <div class="box-body">
+
+                <%= render 'form', bailleur: @bailleur %>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Show', @bailleur %> |
+<%= link_to 'Back', bailleurs_path %>

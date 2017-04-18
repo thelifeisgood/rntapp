@@ -1,0 +1,30 @@
+<div class="row padding">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="box">
+
+      <div class="box-header">
+        <h2>Editer un garant</h2>
+        <small>Remplissez les champs pour editer le garant.</small>
+      </div>
+
+      <div class="box-body dker">
+        <div class="padding">
+
+          <form ui-jp="parsley">
+            <div class="box">
+              <div class="box-body">
+
+                <%= render 'form', garant_locataire: @garant_locataire %>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Show', @garant_locataire %> |
+<%= link_to 'Back', garant_locataires_path %>

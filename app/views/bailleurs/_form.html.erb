@@ -1,0 +1,101 @@
+<%= simple_form_for(@bailleur) do |f| %>
+<%= f.error_notification %>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Prénom</label>
+  <div class="col-sm-9">
+    <%= f.input :prenom, class: "form-control", placeholder: "Prénom du bailleur", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Nom de Mme</label>
+  <div class="col-sm-9">
+    <%= f.input :nomMme, class: "form-control", placeholder: "Nom de Mme", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Prénom Mme</label>
+  <div class="col-sm-9">
+    <%= f.input :prenomMme, class: "form-control", placeholder: "Prénom de Mme", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Nom numéro deux</label>
+  <div class="col-sm-9">
+    <%= f.input :nomDeux, class: "form-control", placeholder: "Nom du deuxième représentant", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Prénom numéro deux</label>
+  <div class="col-sm-9">
+    <%= f.input :nomSociete, class: "form-control", placeholder: "Prénom du deuxième representant", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Nom société</label>
+  <div class="col-sm-9">
+    <%= f.input :nomSociete, class: "form-control", placeholder: "Nom de la société", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Numéro RCS</label>
+  <div class="col-sm-9">
+    <%= f.input :nRcs, class: "form-control", placeholder: "Numéro RCS de la société", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Assujetti à la TVA?</label>
+  <div class="col-sm-9">
+    <%= f.input :tva, class: "indiego", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Nom de l'indivision</label>
+  <div class="col-sm-9">
+    <%= f.input :nomIndivision, class: "form-control", placeholder: "Nom de l'indivision", label: false %>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Adresse</label>
+  <div class="col-sm-9">
+    <%= f.input :adresse, class: "form-control", placeholder: "Adresse fiscal", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Code postal</label>
+  <div class="col-sm-9">
+    <%= f.input :codePostal, class: "form-control", placeholder: "Code postal", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Ville</label>
+  <div class="col-sm-9">
+    <%= f.input :ville, class: "form-control", placeholder: "Ville", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Représentant légal</label>
+  <div class="col-sm-9">
+    <%= f.input :representant, class: "indiego", placeholder: "Representant légal de la personne morale", label: false%>
+  </div>
+</div>
+
+<%= f.association :user %>
+
+<div class="dker p-a text-right">
+  <%= f.button :submit, class: "btn info" %>
+</div>
+
+<% end %>

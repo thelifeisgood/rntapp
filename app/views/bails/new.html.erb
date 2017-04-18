@@ -1,0 +1,27 @@
+<div class="row padding">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="box">
+
+      <div class="box-header">
+        <h2>Ajouter un bail</h2>
+        <small>Remplissez les champs pour ajouter un nouveau bail.</small>
+      </div>
+
+      <div class="box-body dker">
+        <div class="padding">
+
+          <form ui-jp="parsley">
+            <div class="box">
+              <div class="box-body">
+
+              <%= render 'form', bail: @bail %>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

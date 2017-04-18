@@ -1,0 +1,79 @@
+<%= simple_form_for(@locataire) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :civilite %>
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Nom</label>
+    <div class="col-sm-9">
+      <%= f.input :nom, class: "form-control", placeholder: "Nom", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Prenom</label>
+    <div class="col-sm-9">
+      <%= f.input :prenom, class: "form-control", placeholder: "Prenom", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Nom</label>
+    <div class="col-sm-9">
+      <%= f.input :nomDeux, class: "form-control", placeholder: "Deuxieme nom", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Nom</label>
+    <div class="col-sm-9">
+      <%= f.input :prenomDeux, class: "form-control", placeholder: "Deuxieme prenom", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Nom</label>
+    <div class="col-sm-9">
+      <%= f.input :nomSociete, class: "form-control", placeholder: "Nom société", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Numéro Rcs</label>
+    <div class="col-sm-9">
+      <%= f.input :nRcs, class: "form-control", placeholder: "Numéro Rcs", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Adresse</label>
+    <div class="col-sm-9">
+      <%= f.input :adresseSiege, class: "form-control", placeholder: "Adresse", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Code postal</label>
+    <div class="col-sm-9">
+      <%= f.input :codePostalSiege, class: "form-control", placeholder: "Code postal", label: false%>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 form-control-label">Ville</label>
+    <div class="col-sm-9">
+      <%= f.input :villeSiege, class: "form-control", placeholder: "Ville", label: false%>
+    </div>
+  </div>
+
+    <%= f.input :nomDeux %>
+    <%= f.input :prenomDeux %>
+    <%= f.input :nomSociete %>
+    <%= f.input :nRcs %>
+    <%= f.input :representant %>
+    <%= f.association :bailleur %>
+  </div>
+
+  <div class="dker p-a text-right">
+    <%= f.button :submit, class: "btn info" %>
+  </div>
+<% end %>

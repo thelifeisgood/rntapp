@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :bails
+  resources :representant_locataires
+  resources :garant_locataires
+  resources :locataires
+  resources :biens
+  resources :representant_bailleurs
+  resources :bailleurs
+
   get 'pages/welcome'
 
   get 'pages/accueil'

@@ -1,0 +1,86 @@
+<%= simple_form_for(@bail) do |f| %>
+<%= f.error_notification %>
+
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Type de bien</label>
+  <div class="col-sm-9">
+    <%= f.input :typeDeBail, class: "form-control", placeholder: "Quel est la destination de votre bien", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Durée du bail</label>
+  <div class="col-sm-9">
+    <%= f.input :dureeDuBail, class: "form-control", placeholder: "Durée du bail", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Date du bail</label>
+  <div class="col-sm-9">
+    <%= f.input :dateDebutBail, class: "form-control", placeholder: "Date du bail", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Date fin du bail</label>
+  <div class="col-sm-9">
+    <%= f.input :dateFinBail, class: "form-control", placeholder: "Date de fin du bail", label: false%>
+  </div>
+</div>
+
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Destination des locaux</label>
+  <div class="col-sm-9">
+    <%= f.input :destinationDesLocaux, class: "form-control", placeholder: "Quel est a destination des locaux", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Provisions charges</label>
+  <div class="col-sm-9">
+    <%= f.input :loyerHorsCharges, class: "form-control", placeholder: "Montant des provisions de charges", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Modalite Reglement Charges Recuperables</label>
+  <div class="col-sm-9">
+    <%= f.input :modaliteReglementChargesRecuperables, class: "indiego", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Révision automatique du loyer</label>
+  <div class="col-sm-9">
+    <%= f.input :revisionAutomatiqueDuLoyer, class: "indiego", label: false%>
+  </div>
+</div>
+
+<%= f.input :jourExigibiliteLoyer %>
+<%= f.input :modeReglement %>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Enregistrement automatique du loyer</label>
+  <div class="col-sm-9">
+    <%= f.input :enregistrementAutomatiqueLoyer, class: "indiego", label: false%>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-sm-3 form-control-label">Assurance collocation</label>
+  <div class="col-sm-9">
+    <%= f.input :assuranceColocation, class: "indiego", label: false%>
+  </div>
+</div>
+
+    <%= f.association :locataire %>
+    <%= f.association :bien %>
+
+<div class="dker p-a text-right">
+  <%= f.button :submit, class: "btn info" %>
+</div>
+
+<% end %>
