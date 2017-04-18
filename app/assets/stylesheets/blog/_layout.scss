@@ -14,7 +14,7 @@
 }
 
 .blog__content {
-  width: 960px;
+  width: 60rem;
   height: 100%;
   margin: auto;
   text-align: left
@@ -37,10 +37,10 @@ body {
 }
 
 body > .blog__content {
-  width: 960px;
-  margin: 0 auto 60px;
-  line-height: 1.5em;
-  min-height: 400px
+  width: 60rem;
+  margin: 0 auto 3.75rem;
+  line-height: 1.5rem;
+  min-height: 25rem
 }
 
 body > .blog__content:after, body > .blog__content:before {
@@ -53,44 +53,44 @@ body > .blog__content:after {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 1.3em;
+  font-size: 1.88rem;
+  line-height: 1.3rem;
   text-align: center;
   font-weight: bold;
-  margin-top: 60px;
-  margin-bottom: 60px
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 1.3em;
+  font-size: 1.25rem;
+  line-height: 1.3rem;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 12px
+  margin-top: 1.88rem;
+  margin-bottom: 0.75rem
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold
 }
 
 .subh1 {
   text-align: center;
-  font-size: 20px;
-  line-height: 1.3em;
+  font-size: 1.25rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.8);
-  margin-top: -40px;
-  margin-bottom: 60px
+  margin-top: -2.5rem;
+  margin-bottom: 3.75rem
 }
 
 p {
-  margin-top: 10px;
-  margin-bottom: 15px
+  margin-top: 0.63rem;
+  margin-bottom: 0.94rem
 }
 
 /*li {
   list-style-type: disc;
-  margin: 0 0 0 20px
+  margin: 0 0 0 1.25rem
 }*/
 
 a {
@@ -110,7 +110,7 @@ a img {
 hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 1px
+  height: 0.06rem
 }
 
 .button-paragraph {
@@ -124,14 +124,14 @@ hr {
   font-weight: 200;
   font-size: 11pt;
   font-weight: bold;
-  margin: 40px auto 7px auto;
+  margin: 2.5rem auto 0.44rem auto;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 3px;
-  padding: 19px 35px;
-  /*box-shadow: 7px 7px 0px rgba(62, 65, 73, 0.2);*/
-  letter-spacing: 0.025em
+  border-radius: 0.19rem;
+  padding: 1.19rem 2.19rem;
+  /*box-shadow: 0.44rem 0.44rem 0rem rgba(62, 65, 73, 0.2);*/
+  letter-spacing: 0.025rem
 }
 
 .button:hover, .button:active {
@@ -140,9 +140,9 @@ hr {
 }
 
 h2.features-title {
-  padding-bottom: 12px;
-  border-bottom: 1px solid #C2C2BD;
-  font-size: 24px;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.06rem solid #C2C2BD;
+  font-size: 1.5rem;
   text-align: center
 }
 
@@ -152,9 +152,9 @@ ul.features {
 
 ul.features li {
   display: inline-block;
-  margin: 0 99px 40px 0;
+  margin: 0 6.19rem 2.5rem 0;
   vertical-align: top;
-  width: 251px
+  width: 15.69rem
 }
 
 ul.features li:last-of-type {
@@ -163,30 +163,30 @@ ul.features li:last-of-type {
 
 .col {
   float: left;
-  margin-left: 0px;
-  min-height: 28px;
-  width: 300px;
-  margin-right: 30px
+  margin-left: 0rem;
+  min-height: 1.75rem;
+  width: 18.75rem;
+  margin-right: 1.88rem
 }
 
 .col:first-of-type {
-  margin-right: 0px
+  margin-right: 0rem
 }
 
 .d3_image img {
-  border: 1px solid #ECE8DD;
+  border: 0.06rem solid #ECE8DD;
   margin: 0 auto;
   display: block;
-  margin-top: 30px
+  margin-top: 1.88rem
 }
 
 h3.media-type {
-  line-height: 22px;
+  line-height: 1.38rem;
   font-weight: bold;
   clear: both;
   width: 100%;
-  border-bottom: 1px solid #C2C2BD;
-  padding-bottom: 10px
+  border-bottom: 0.06rem solid #C2C2BD;
+  padding-bottom: 0.63rem
 }
 
 .centered-paragraph {
@@ -199,31 +199,31 @@ h3.media-type {
 }
 
 #twitter-widget-0 {
-  width: 700px;
+  width: 43.75rem;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 1.88rem;
   display: block
 }
 
 /******************** Mobile oriented and responsiveness *******************/
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
   body > .blog__content, .blog__content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-width: 100%;
     width: 100%;
-    padding: 0 10px
+    padding: 0 0.63rem
   }
 
   .blog__banner h1 {
-    font-size: 45px
+    font-size: 2.81rem
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 43.13rem) {
   .blog__banner h1 {
-    font-size: 45px
+    font-size: 2.81rem
   }
 }
