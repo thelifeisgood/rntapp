@@ -1,0 +1,352 @@
+
+<body style="width: auto; margin-left: 0px; overflow-x: auto;">
+  <%= provide(:title, "Accueil") %>
+  <%= content_for :id_app, 'app' %>
+  <%= content_for :ember, 'ember-application' %>
+  <%= content_for :ct_class, 'ct__application ct__index' %>
+  <%= content_for :application_class, 'application open-home' %>
+  <%= content_for :overlay_class, 'open-home__overlay' %>
+  <%= content_for :cover_class, 'open-home__cover' %>
+
+
+
+  <div class="application__body-container">
+    <div class="application__body">
+      <div class="open-home__header">
+        <h1 class="open-home__title">Vos locations. Partout avec vous.
+        </h1>
+        <h2 class="open-home__subtitle">Reprenez le controle de vos biens.
+        </h2>
+      </div>
+
+
+      <div style="height: 593px" class="search__form--collapsible collapsible slow">
+        <div class="collapsible__measuring-div" style="overflow: hidden">
+          <div class="search__form">
+
+
+            <div class="split-panel--right-container">
+              <div class="search__form--right split-panel--right landing ">
+                <div class="split-panel__arrow" style="top: -999px;">
+                </div>
+
+                <div class="ct-panel">
+                  <div class="landing-panel">
+                    <header class="landing-panel__header">
+                      <h3>Les petits plus de Rntapp
+                      </h3>
+                    </header>
+
+                    <div class="landing-panel__content">
+                      <ul class="landing-panel__list">
+                        <li class="landing-panel__list-item">
+                          <span class="icon--price">
+
+                          </span>
+                          <div>
+                            <b>Gerez comme vous voulez
+                            </b>
+                            <br> PC, Smartphone, Tablette, choissisez ce qui vous plait.
+                          </div>
+                        </li>
+                        <li class="landing-panel__list-item">
+                          <span class="icon--loyalty-card">
+                          </span>
+                          <div>
+                            <b>Partout, tout le temps
+                            </b>
+                            <br>L'état des lieux, le bail, les cautions, tout y est.
+                          </div>
+                        </li>
+                        <li class="landing-panel__list-item">
+                          <span class="icon--payment">
+                          </span>
+                          <div>
+                            <b>Sans frais supplémentaires
+                            </b>
+                            <br> 3€50 par mois et c'est tout, pas de frais caché.
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="hr">
+                        <span>
+                        Rejoinez nous et profitez de 2 mois offerts!
+                        </span>
+                      </div>
+
+                      <%= link_to t(".sign_up", default: "Vous etes un pro c'est par ici!", class: "search__add-cui"), business_path %>
+
+                      <div class="search__button progress-button">
+                        <%= link_to t(".sign_up", default: "Inscrivez-vous"), new_user_registration_path, class: "button progress-button--button" %>
+
+                        <div class="progress-button--bar">
+                          <div style="width:0%">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mobile-incentive generic">
+    <div class="mobile-incentive__wrapper">
+      <div class="mobile-incentive__content">
+        <h1 class="mobile-incentive__title">Vos biens. Partout avec vous.
+        </h1>
+        <span class="mobile-incentive__subtitle">Rntapp marche encore mieux quand vous utilisez notre application.
+        </span>
+
+        <div class="mobile-incentive__badges">
+          <%= link_to bientot_path do %>
+            <%=image_tag("store/google_play.svg")%>
+          <% end %>
+          <%= link_to bientot_path do %>
+            <%=image_tag("store/app_store.svg")%>
+          <% end %>
+        </div>
+
+        <div class="mobile-incentive__arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="open-home__main">
+    <article class="open-home__carriers">
+      <div class="open-home-carriers__title--container open-home__content">
+        <h2 class="open-home-carriers__title">Vous avez des questions n'hesitez pas:
+        </h2>
+      </div>
+
+      <div class="open-home-carriers__logos">
+        <div class="open-home__content">
+          <div class="open-home-carriers--primary">
+            <h2 style="color: #FF5722">06.95.17.95.44
+            </h2>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="open-home__intro">
+      <div class="open-home__content">
+        <h2>Tous vos biens, Un seul lieu.
+        </h2>
+        <p>Peu importe l'heure, ou que vous soyez, vous avez accès
+          <br>à la gestion de vos locations et à la relation avec vos locataires.
+        </p>
+      </div>
+    </article>
+
+    <article class="open-home__arguments">
+      <div class="open-home__argument">
+        <div class="open-home-argument__illu open-home-argument__illu--first">
+        </div>
+        <div class="open-home-argument__text">
+          <div class="text">
+            <h2>C’est simple et c’est tout.
+            </h2>
+              <p>Tout vos biens dans une interface claire,
+                <br>intuitive et qui s'occupe de vos tâches répetitives pour que vous n'ayez pas à le faire.
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="open-home__argument">
+        <div class="open-home-argument__illu open-home-argument__illu--second">
+        </div>
+          <div class="open-home-argument__text">
+            <div class="text">
+              <h2>Parce que chaque euro compte.
+              </h2>
+              <p>Le prix est fixe, sans surprise, toujours le même, sans surcout et le moin chère du marché.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="open-home__argument">
+        <div class="open-home-argument__illu open-home-argument__illu--third">
+        </div>
+          <div class="open-home-argument__text">
+            <div class="text">
+              <h2>Vous allez aimer gérer vos biens.
+              </h2>
+              <p>En choisissant de ne faire que de la gestion, nous avons dû laisser certaines choses de côté, comme les publicités, les messages et les erreurs incompréhensibles.
+              </p>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="open-home__features">
+      <div class="open-home__content">
+        <h2>Comment ça marche?
+        </h2>
+
+        <div class="open-home__features--half">
+          <h3>Inscrivez vos biens
+          </h3>
+
+          <div class="open-home__features--table">
+            <%= image_tag("icon/connection.svg", :class => "icon-connection", :width => "110", :height => "95")%>
+            <div class="or">Et
+            </div>
+            <%= image_tag("icon/resort.svg", :class => "icon-resort", :width => "110", :height => "34")%>
+          </div>
+          <p>Nous soignons et sécurisons vos données
+            <br>comme s’ils n’avaient pas de prix.
+          </p>
+        </div>
+
+        <div class="open-home__features--half">
+          <h3>Gérer
+          </h3>
+
+          <div class="open-home__features--table">
+            <%= image_tag("icon/browser.svg", :class => "icon-browser", :width => "110", :height => "85")%>
+            <div class="or">Et
+            </div>
+            <%= image_tag("icon/pdf.svg", :class => "icon-pdf", :width => "110", :height => "85")%>
+          </div>
+
+          <p>Vous obtenez une interface de gestion
+            <br>avec tout vos besoins sans bouger de chez vous.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="open-home__get-on-board">
+      <div class="open-home__content">
+        <h2>Rejoignez-nous!
+        </h2>
+        <p>Arrêtez de perdre de l'argent.
+        </p>
+
+        <button type="button" class="button">
+          <%= link_to t(".sign_up", default: "C'est par ici"), new_user_registration_path %>
+        </button>
+      </div>
+    </article>
+
+    <article class="open-home__testimonials">
+      <div class="open-home__content">
+        <h2>Demandez conseil à nos utilisateurs.
+        </h2>
+        <p>Tout le marketing du monde ne remplacera jamais ce que nos utilisateurs disent de nous.
+          <br>C’est encore eux qui parlent le mieux de notre service.
+        </p>
+      </div>
+      <div>
+        <div class="open-home__tweets--container open-home__content">
+          <div class="container" id="testimonials-row">
+            <div class="row">
+              <div class="col-md-10 column">
+                <h2 class="page-header">
+                  <small>Nos clients nous aiment!
+                  </small>
+                </h2>
+                <div class="carousel slide" id="testimonials-rotate">
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="col-md-2">
+                        <%= image_tag("testimonial/Yannick.jpg", class: "img-circle img-responsive")%>
+                      </div>
+                      <div class="testimonials col-md-10">
+
+                        <h3>
+                          Toute technologie avancée est magique. Mais surtout celle là! -
+                          <small>Yannick Desmules
+                          </small>
+                        </h3>
+                      </div>
+
+                      <div class="clearfix">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2">
+                        <%= image_tag("testimonial/Eric.jpg", class: "img-circle img-responsive")%>
+                      </div>
+                      <div class="testimonials col-md-10">
+                          <h3>
+                            C'est un soulagement d'avoir enfin un interlocuteur qui connaît parfaitement bien son sujet. -
+                            <small>Eric Piegay
+                            </small>
+                          </h3>
+                      </div>
+                      <div class="clearfix">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-md-2">
+                        <%= image_tag("testimonial/Yann.jpg", class: "img-circle img-responsive")%>
+                      </div>
+                      <div class="testimonials col-md-10">
+                        <h3>
+                          Grâce Rntapp, je peux dire que j'ai vraiment gagné en confort. -
+                          <small>Yann Guitard
+                          </small>
+                        </h3>
+                      </div>
+                      <div class="clearfix">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pull-right">
+                  <a class="left" href="#testimonials-rotate" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left">
+                  </span>
+                  </a>
+                  <a class="right" href="#testimonials-rotate" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right">
+                  </span>
+                  </a>
+                  <div class="clearfix">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--end of container-->
+
+          <div style="height: 0px" class="collapsible collapsed slow"><!---->
+
+          </div>
+        </div>
+      </div>
+      <div class="open-home__press">
+        <div class="open-home__content">
+          <%= link_to informations_presse_path, class: "open-home-press__link" do %>
+            <img class="open-home-press__logo open-home-press__logo--france2" src="https://assets.trainline.eu/assets/images/open-home/press/france2-426c29639e964b6b8131b2234de3fa0e.png" alt="france2">
+            <img class="open-home-press__logo open-home-press__logo--20min" src="https://assets.trainline.eu/assets/images/open-home/press/20min-dee5c2ef164835bc76e9bf418954ce06.png" alt="20min">
+            <img class="open-home-press__logo open-home-press__logo--canalplus" src="https://assets.trainline.eu/assets/images/open-home/press/canalplus-3b6414c4f6fead5711bf008ec8f09c21.png" alt="canalplus">
+            <img class="open-home-press__logo open-home-press__logo--challenges" src="https://assets.trainline.eu/assets/images/open-home/press/challenges-d3f3161570179835b0735642742763ef.png" alt="challenges">
+            <img class="open-home-press__logo open-home-press__logo--figaro" src="https://assets.trainline.eu/assets/images/open-home/press/figaro-13b783c88bd90131113156f4028dfee5.png" alt="figaro">
+            <img class="open-home-press__logo open-home-press__logo--lci" src="https://assets.trainline.eu/assets/images/open-home/press/lci-0e0a2cba409560b2eb6b9e7563930181.png" alt="lci">
+            <img class="open-home-press__logo open-home-press__logo--lemonde" src="https://assets.trainline.eu/assets/images/open-home/press/lemonde-bb82c17ccd314dffc91373f3d72104fb.png" alt="lemonde">
+            <img class="open-home-press__logo open-home-press__logo--ouifm" src="https://assets.trainline.eu/assets/images/open-home/press/ouifm-62b6adbb090d1496b440ba9ce15873f3.png" alt="ouifm">
+            <img class="open-home-press__logo open-home-press__logo--parisien" src="https://assets.trainline.eu/assets/images/open-home/press/parisien-5ff202730d637a2c595eeb976c133c40.png" alt="parisien">
+            <img class="open-home-press__logo open-home-press__logo--techcrunch" src="https://assets.trainline.eu/assets/images/open-home/press/techcrunch-55076242894a2d1ff551f1f6765f5ef7.png" alt="techcrunch">
+          <% end %>
+        </div>
+      </div>
+    </article>
+  </section>
+

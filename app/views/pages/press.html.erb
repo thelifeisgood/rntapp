@@ -1,0 +1,125 @@
+<% provide(:title, "Espace presse") %>
+<% content_for :body_class, 'page-press template-page-v2' %>
+  <header class="static__banner static__banner--press">
+    <div class="static__banner--container">
+      <div class="static__content">
+        <h1>Espace Presse
+        </h1>
+      </div>
+    </div>
+  </header>
+  <section class="page__container">
+    <div class="page__content">
+      <article class="page__layout page__layout--two-thirds static__content">
+        <h2>Rntapp
+        </h2>
+        <p>Rntapp, c’est la façon la plus simple, rapide et économique de gérer vos biens locatifs sur votre ordinateur, votre tablette ou votre smartphone.
+        </p>
+        <p>
+          <span class="hr">
+          </span>
+        </p>
+      </article>
+      <article class="page__layout page__layout--two-thirds static__content">
+        <h2>Communiqués de presse
+        </h2>
+        <div class="press-releases two-thirds">
+          <ul>
+            <li>16 janvier 2017 :
+              <a href="#">Bientôt le premier!
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="more-releases">→ Voir plus
+          </a>
+        </div>
+      </article>
+      <article class="page__layout page__layout--two-thirds static__content">
+        <p>
+          <span class="hr">
+          </span>
+        </p>
+        <h2>La presse en parle
+        </h2>
+      </article>
+      <div class="static__content section__press-articles">
+        <ul class="press-articles">
+          <li class="ct-column">
+            <div class="logo">
+            <%= link_to 'http://www.leparisien.fr' do %>
+              <%= image_tag('press/le-parisien.svg') %>
+            <% end %>
+            </div>
+            <div class="description">
+              <div class="quote">
+                Pas encore sur le Parisien mais nous y travaillons...
+              </div>
+              <div class="link">
+                <%= link_to "Lire le futur article", 'http://www.leparisien.fr' %>
+              </div>
+            </div>
+          </li>
+          <li class="ct-column">
+            <div class="logo">
+              <%= link_to 'http://www.lci.fr' do %>
+                <%= image_tag('press/lci.png', :width=> "150" ,:height => "59") %>
+              <% end %>
+            </div>
+            <div class="description">
+              <div class="quote">
+                L'article pour LCI est en court.
+              </div>
+              <div class="link">
+                <%= link_to "Le reportage aussi", 'http://www.lci.fr' %>
+              </div>
+            </div>
+          </li>
+          <li class="ct-column">
+            <div class="logo">
+              <%= link_to 'http://www.lefigaro.fr' do %>
+                <%= image_tag('press/le_figaro.png', :width=> "150" ,:height => "28") %>
+              <% end %>
+            </div>
+            <div class="description">
+              <div class="quote">
+                Notre planning est trop chargé pour les recevoir.
+              </div>
+              <div class="link">
+                <%= link_to "Pour ne pas nous lire c'est par ici", 'http://www.lefigaro.fr' %>
+              </div>
+            </div>
+          </li>
+          <li class="ct-column">
+            <div class="logo">
+              <%= link_to 'http://www.lemonde.com' do %>
+                <%= image_tag('press/lemonde.png', :width=> "242" ,:height => "47") %>
+              <% end %>
+            </div>
+            <div class="description">
+              <div class="quote">
+                Nous sommes arrivés en retard au rendez-vous.
+              </div>
+              <div class="link">
+                <%= link_to "Lire le non article", 'http://www.lemonde.com' %>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <article class="page__layout page__layout--two-thirds static__content">
+        <p>
+          <span class="hr">
+          </span>
+        </p>
+        <h2>Contact
+        </h2>
+        <p>Vous êtes journaliste, vous souhaitez des informations complémentaires, envoyez un mail à <a href="mailto:contact@rntapp.fr">contact@rntapp.fr
+        </a>.
+      </p>
+      <p>Vous pouvez aussi faire un tour sur <a href="https://www.facebook.com/rntapp.fr">notre page Facebook</a> ou jeter un œil à ce que nos clients disent de nous sur <a href="/testimonials">Twitter
+      </a>.
+    </p>
+  </article>
+</div>
+</section>
+

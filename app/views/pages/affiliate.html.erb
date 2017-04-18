@@ -1,0 +1,57 @@
+<% provide(:title, "Affiliation") %>
+<% content_for :body_class, 'page-affiliates template-page-v2' %>
+
+  <header class="static__banner static__banner--affiliates">
+    <div class="static__banner--container">
+      <div class="static__content">
+        <h1>Programme d’affiliation de Rntapp
+        </h1>
+        <h2>Recevez une commission pour chaque bien inscrit.
+        </h2>
+      </div>
+    </div>
+  </header>
+  <section class="page__container">
+    <div class="page__content">
+      <article class="page__layout page__layout--two-thirds static__content">
+        <h2 id="rntapp-en-bref">Rntapp en bref
+        </h2>
+        <p>Rntapp est une plateforme de gestion de biens en ligne
+          <a href="/about">créé en 2016
+          </a>. Nous administrons une plateforme de gestion de biens locatifs principalement en France, ainsi que dans de nombreux pays européennes. Rntapp s'est accompagné d'experts pour concevoir un produit riche ergonomique et simple pour qu'il convienne à tous.
+        </p>
+
+        <p>Notre service a été imaginé avec une seule idée en tête: simplifier la gestion de biens. Nous offrons à nos utilisateurs une interface intuitive et un service client irréprochable.
+        </p>
+        <p>
+          <span class="hr">
+          </span>
+        </p>
+        <h2 id="devenir-affilie">Devenir affilié
+        </h2>
+        <p>Notre programme d’affiliation est disponible à travers la plateforme TradeDoubler et fonctionne très simplement:
+        </p>
+        <ol class="custom">
+          <li>vous vous inscrivez sur TradeDoubler et postulez
+            <br>
+            à notre programme ;
+          </li>
+          <li>vous placez sur votre site des bannières et des liens spéciaux qui pointent vers Rntapp ;
+          </li>
+          <li>vous recevez une commission mensuel pour chaque bien inscrit et payé dans les 30 jours.
+          </li>
+        </ol>
+        <p>Nous avons détaillé chacune de ces étapes dans
+          <%= link_to t(".guide", default: "notre guide pas à pas"), bientot_path %>
+        </p>
+        <p>Rntapp est aujourd’hui le seul vendeur en ligne à proposer un programme d’affiliation mensualisé.
+        </p>
+        <p class="empty">
+        </p>
+        <p style="text-align: center;">
+          <a class="ct-button" href="http://publisher.tradedoubler.com/public/aSignup.action?language=fr&amp;country=FR" target="_blank">Devenir affilié
+          </a>
+        </p>
+      </article>
+    </div>
+  </section>

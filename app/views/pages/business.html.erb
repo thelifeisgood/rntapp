@@ -1,0 +1,381 @@
+<% provide(:title, "For buisness") %>
+<% content_for :body_class, 'page-business template-business' %>
+
+<section class="business">
+  <article class="business__section business__section--intro" id="section-intro">
+    <div class="business__cover--wrapper">
+      <div class="business__cover--container" style="background-image: <%= image_url("page/b2b_cover.jpg")%>">
+        <div class="gradient--left">
+        </div>
+        <div class="gradient--right">
+        </div>
+      </div>
+      <div class="overlay">
+      </div>
+    </div>
+    <div class="business--container">
+      <div class="business__intro">
+        <header class="business__section--header">
+          <h1>Rntapp for Business
+            <br>
+            <small class="subtitle">La gestion pour les pros,
+              <br>
+              par des pros.
+            </small>
+          </h1>
+        </header>
+        <div class="table">
+          <div class="row">
+            <div class="cell business__icon-card">
+              <span class="icon">
+                <%= image_tag("icon/reduction-card-purple.svg", :height =>"40") %>
+              </span>
+              <span class="text">Une solution
+                <br>
+                à jour
+              </span>
+            </div>
+            <div class="cell business__icon-card">
+              <span class="icon">
+                <%= image_tag("icon/compta-purple-1.svg", :height =>"40") %>
+              </span>
+              <span class="text">Simplifiez
+                <br>
+                votre rentabilité
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell business__icon-card">
+              <span class="icon">
+                <%= image_tag("icon/compta-purple-1.svg", :height =>"40") %>
+              </span>
+              <span class="text">Gérer les accès
+                <br>
+                de vos clients
+              </span>
+            </div>
+            <div class="cell business__icon-card">
+              <span class="icon">
+                <%= image_tag("icon/prix-purple.svg", :height =>"40") %>
+              </span>
+              <span class="text">Bénéficiez d’une
+                <br>
+                tarification adaptée
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="business__cta--container">
+          <%= link_to t(".sign_up", default: "Profitez de 2 mois offerts"), new_user_registration_path, class: "business__cta business__cta--primary" %>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="business__section business__section--carriers" id="section-carriers">
+    <div class="business--container">
+      <div class="business__carriers--title">
+        Vous avez des questions?
+      </div>
+      <ul class="business__carriers--list">
+        <li>
+          <h3>06.95.17.95.44
+          </h3>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="business__section business__section--accounting" id="section-accounting">
+    <div class="business--container">
+      <header class="business__section--header">
+        <h2>Tout vos documents au même endroit.
+        </h2>
+        <span class="subtitle">Plus aucun documents perdu, ils restent à porter de main.
+        </span>
+      </header>
+      <div class="business__box--container">
+        <div class="business__box business__box--left">
+          <div class="business__icon-box">
+            <h4>Factures et quittances
+            </h4>
+            <figure>
+              <%= image_tag("icon/facture.svg", :height =>"100") %>
+            </figure>
+            <ul>
+              <li>Récapitule les entrées/sorties chaque mois
+              </li>
+              <li>Simplifie le contrôle comptable
+              </li>
+              <li>Disponible au format PDF
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="business__box--gutter">
+        </div>
+        <div class="business__box business__box--right">
+          <div class="business__icon-box">
+            <h4>Statistiques
+            </h4>
+            <figure>
+              <%= image_tag("icon/stats.svg", :height =>"100") %>
+            </figure>
+            <ul>
+              <li>Permet d’exporter vos données
+              </li>
+              <li>Donne de la visibilité sur le budget
+              </li>
+              <li>Disponible au format CSV
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <%= link_to t(".sign_up", default: "Télécharger des exemples"), new_user_registration_path, class: "business__cta" %>
+    </div>
+  </article>
+  <article class="business__section business__section--slideshow" id="section-slideshow">
+    <div class="business--container">
+      <header class="business__section--header">
+        <h2>Simple à prendre en main, Simple à utiliser.
+        </h2>
+        <span class="subtitle">Vous êtes comme chez vous.
+        </span>
+      </header>
+      <div class="business__slideshow">
+        <div class="business__slideshow--links">
+          <a data-slide-index="0" href="#" class="active">Modifier un collaborateur
+          </a>
+        </div>
+        <div class="business__slideshow--frame">
+          <span class="business__slideshow--frame-menu">
+          </span>
+          <div class="bx-wrapper" style="max-width: 100%;">
+            <div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 534px;">
+              <ul class="business__slideshow--slides" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                <li style="float: left; list-style: none; position: center; width: 854px;" class="bx-clone" aria-hidden="true">
+                  <%= image_tag("page/organization_fr.png", :alt =>"Ajouter un collaborateur") %>
+                </li>
+              </ul>
+            </div>
+            <div class="bx-controls bx-has-controls-direction">
+              <div class="bx-controls-direction">
+                <a class="bx-prev" href="">←
+                </a>
+                <a class="bx-next" href="">→
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="business__section business__section--mobile-apps" id="section-mobile-apps">
+    <div class="business--container">
+      <header class="business__section--header">
+        <h2>Sur place et à emporter.
+        </h2>
+        <span class="subtitle">Retrouvez vos documents partout, partout où vous allez.
+        </span>
+      </header>
+      <div class="business__mobile-apps">
+        <div class="business__mobile-apps--container">
+          <div class="business__mobile-apps--description">
+            <div class="wrap">
+              <h3>Loin du bureau,
+                <br>
+                Près de votre régie.
+              </h3>
+              <span class="subtitle">Votre mobile fait tout comme un grand.
+              </span>
+            </div>
+            <div class="table">
+              <div class="row">
+                <div class="cell business__icon-card">
+                  <span class="icon">
+                    <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+                  </span>
+                  <span class="text">Ajouter
+                    <br>
+                    un bien
+                  </span>
+                </div>
+                <div class="cell business__icon-card">
+                  <span class="icon">
+                    <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+                  </span>
+                  <span class="text">Faire un
+                    <br>
+                    état des lieux
+                  </span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell business__icon-card">
+                  <span class="icon">
+                    <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+                  </span>
+                  <span class="text">Gérer
+                    <br>
+                    un problème
+                  </span>
+                </div>
+                <div class="cell business__icon-card">
+                  <span class="icon">
+                    <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+                  </span>
+                  <span class="text">Envoyer
+                    <br>
+                    vos relances
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="business__mobile-apps--links">
+              <%= link_to bientot_path do %>
+                <%= image_tag("store/play-badge_fr.png", :height =>"48", :alt =>"Google Play") %>
+              <% end %>
+              <%= link_to bientot_path do %>
+                <%= image_tag("store/app_store-fr.svg", :height =>"48", :alt =>"App Store") %>
+              <% end %>
+            </div>
+          </div>
+          <div class="business__mobile-apps--screenshots">
+            <%= image_tag("page/phones_fr.png", :alt =>"Rntapp mobile apps") %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="business__section business__section--price" id="section-price">
+    <div class="business--container">
+      <header class="business__section--header">
+        <h2>Des abonnements qui ne laissent personne indifférent.
+        </h2>
+      </header>
+      <div class="business__box--container">
+        <div class="business__box business__box--left">
+          <div class="business__price">
+            <div class="business__box--header">
+              <h3>Abonnement mensuel
+                <span class="subtitle">Collaborateur / mois
+                </span>
+              </h3>
+            </div>
+            <div class="price">
+              9
+              <sup>€
+              </sup>
+            </div>
+            <p class="description">Vos collaborateurs ont accès à tout notre service pendant un mois.
+              <br>
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="business__box--gutter">
+        </div>
+        <div class="business__box business__box--right">
+          <div class="business__price">
+            <div class="business__box--header">
+              <h3>Bien mensuel
+                <span class="subtitle">Bien / mois
+                </span>
+              </h3>
+            </div>
+            <div class="price">
+              2
+              <sup>€
+              </sup>
+            </div>
+            <p class="description">Vous avez accès à toute la simplicité de Rntapp pour chaque bien.
+              <br>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="business__signup-form">
+        <h3>Vous ne payez que ce qui vous est indiqué.
+          <br>
+          L’abonnement couvre le reste.
+        </h3>
+        <ul class="list business__icon-card--list">
+          <li class="business__icon-card">
+            <span class="icon">
+              <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+            </span>
+            <span class="text">Pas de frais
+              <br>
+              cachés
+            </span>
+          </li>
+          <li class="business__icon-card">
+            <span class="icon">
+              <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+            </span>
+            <span class="text">Pas de frais
+              <br>
+              d'assistance
+            </span>
+          </li>
+          <li class="business__icon-card">
+            <span class="icon">
+              <%= image_tag("icon/icon_check-white.svg", :alt =>"icon check") %>
+            </span>
+            <span class="text">Un service client
+              <br>
+              disponnible
+            </span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </article>
+  <article class="business__section business__section--client-support" id="section-client-support">
+    <div class="business--container">
+      <header class="business__section--header">
+        <h2>Un service client au service des clients.
+        </h2>
+        <span class="subtitle">Aucune question ne reste sans réponse.Si nous n'avons pas la reponse nous la chercherons.
+        </span>
+      </header>
+      <div class="business__employees">
+        <ul style="display: block;">
+          <li>
+            <%= image_tag("employees/anthony-besson.jpg", :width =>"140", :height =>"210", :alt =>"Anthony Besson") %>
+            <div class="business__employees--name">
+              Anthony
+            </div>
+          </li>
+          <li>
+            <%= image_tag("employees/anthony-besson.jpg", :width =>"140", :height =>"210", :alt =>"Anthony Besson") %>
+            <div class="business__employees--name">
+              Barbara
+            </div>
+          </li>
+          <li>
+            <%= image_tag("employees/anthony-besson.jpg", :width =>"140", :height =>"210", :alt =>"Anthony Besson") %>
+            <div class="business__employees--name">
+              Patrick
+            </div>
+          </li>
+          <li>
+            <%= image_tag("employees/anthony-besson.jpg", :width =>"140", :height =>"210", :alt =>"Anthony Besson") %>
+            <div class="business__employees--name">
+              Remi
+            </div>
+          </li>
+          <li>
+            <%= image_tag("employees/anthony-besson.jpg", :width =>"140", :height =>"210", :alt =>"Anthony Besson") %>
+            <div class="business__employees--name">
+              Cléa
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>

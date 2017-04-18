@@ -1,0 +1,130 @@
+<% provide(:title, "Nous contacter") %>
+<% content_for :body_class, 'page-contact template-page-v2' %>
+
+<header class="static__banner static__banner--contact">
+  <div class="static__banner--container">
+    <div class="static__content">
+      <h1>Contacter Rntapp
+      </h1>
+    </div>
+  </div>
+</header>
+<section class="page__container">
+  <div class="page__content">
+    <article class="contact__links static__content">
+      <h1>Comment pouvons-nous vous aider ?
+        <small>Choisissez ci-dessous le sujet qui correspond à votre demande.
+        </small>
+      </h1>
+      <div class="contact__links-boxes">
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--support">
+            </div>
+            <h3 class="links-box__title">Service client
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Visitez notre
+                  <%= link_to t(".help", default: "site d'aide"), aide_path %>
+                  ou posez-nous vos questions par
+                  <a href="mailto:contact@rntapp.fr" target="_blank">e-mail
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--press">
+            </div>
+            <h3 class="links-box__title">Presse
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Consultez notre
+                  <%= link_to t(".press", default: "page presse"), informations_presse_path %>
+                  ou envoyez-nous un
+                  <a href="mailto:contact@rntapp.fr" target="_blank">e-mail
+                  </a>.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--jobs">
+            </div>
+            <h3 class="links-box__title">Jobs
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Parcourez nos
+                  <%= link_to t(".jobs", default: "offres d'emploi"), emploi_path %>
+                  ou postulez directement par
+                  <a href="mailto:contact@rntapp.fr" target="_blank">e-mail
+                  </a>.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--business">
+            </div>
+            <h3 class="links-box__title">Pour les entreprises
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Une question sur
+                  <%= link_to t(".business", default: "for Buisness"), business_path %>
+                  Envoyez-nous un
+                </span>
+                <a href="mailto:contact@rntapp.fr">e-mail
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--partnership">
+            </div>
+            <h3 class="links-box__title">Partenariats
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Envie de vous associer à nous ? Parlez-nous en par
+                </span>
+                <a href="mailto:contact@rntapp.fr">e-mail
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ct-column">
+          <div class="links-box">
+            <div class="links-box__icon links-box__icon--affiliation">
+            </div>
+            <h3 class="links-box__title">Affiliation
+            </h3>
+            <div class="links-box__content">
+              <p>
+                <span style="font-weight: 400;">Visitez notre
+                  <%= link_to t(".affiliate", default: "pages dédiée"), affiliation_path %>
+                  ou écrivez-nous par
+                </span>
+                <a href="mailto:contact@rntapp.fr">e-mail
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
