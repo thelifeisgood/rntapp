@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  authenticated do
+    root :to => 'dashboards#welcome'
+  end
+  get '/dashboard', to: 'dashboards#dashboard'
+
   resources :bails
   resources :representant_locataires
   resources :garant_locataires
