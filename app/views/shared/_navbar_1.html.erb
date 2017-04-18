@@ -1,0 +1,55 @@
+<div class="navbar navbar-toggleable-sm flex-row align-items-center">
+
+  <%= render "blocks/navbar_brand" %>
+
+  <!-- navbar collapse -->
+  <div class="hidden-xs-down col-sm-8 mx-auto">
+    <!-- link and dropdown -->
+
+
+
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn white" type="button">Go!</button>
+          </span>
+        </div>
+
+
+    <!-- / link and dropdown -->
+  </div>
+  <!-- / navbar collapse -->
+
+  <!-- nabar right -->
+
+  <ul class="nav navbar-nav flex-row align-items-center ml-auto">
+
+    <li class="nav-item dropdown pos-stc-xs">
+      <a class="nav-link" href data-toggle="dropdown">
+        <i class="material-icons">&#xe7f5;</i>
+        <span class="label label-sm up warn">3</span>
+      </a>
+      <%= render "blocks/dropdown_notification" %>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a href class="nav-link dropdown-toggle text-ellipsis" data-toggle="dropdown">
+        <span class="hidden-md-down nav-text m-r-sm text-right">
+          <span class="block l-h-1x _500">Jack Perez</span>
+          <small class="block l-h-1x text-muted"><i class="material-icons text-md">&#xe0c8;</i> Los Angeles, CA</small>
+        </span>
+        <span class="avatar w-32">
+          <%= image_tag("a1.jpg", alt: "...")%>
+          <i class="away b-white left"></i>
+        </span>
+      </a>
+      <%= render "blocks/dropdown_user" %>
+    </li>
+
+  </ul>
+
+  <!-- / navbar right -->
+
+</div>
+
+

@@ -1,0 +1,31 @@
+  <!-- aside -->
+  <div id="aside" class="app-aside modal fade folded md nav-expand" ng-class="{'folded': app.setting.folded}">
+  	<div class="left navside indigo-900 dk" layout="column">
+      <div class="navbar navbar-md no-radius">
+        <%= render "blocks/navbar_brand" %>
+      </div>
+      <div data-flex class="hide-scroll">
+        <nav class="scroll nav-active-{{app.setting.theme.primary}}">
+          <%= render "blocks/nav" %>
+        </nav>
+      </div>
+      <div>
+        <%= render "blocks/aside_bottom_0" %>
+      </div>
+    </div>
+  </div>
+  <!-- / aside -->
+
+  <!-- content -->
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="app-header white box-shadow navbar-md">
+        <%= render "blocks/header" %>
+    </div>
+    <div class="app-footer">
+      <%= render "blocks/footer" %>
+    </div>
+    <div ui-view class="app-body" id="view"></div>
+  </div>
+  <!-- / -->
+
+

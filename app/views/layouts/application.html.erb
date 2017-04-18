@@ -9,9 +9,32 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
+    <div class="app" id="app">
+
+  <!-- ############ LAYOUT START-->
+      <!-- content -->
+      <div id="content" class="app-content box-shadow-z0" role="main">
+        <div class="app-header navbar-md white box-shadow">
+          <%= render 'shared/navbar_1' %>
+          <%= render 'shared/flashes' %>
+        </div>
+        <div ui-view class="app-body" id="view">
+        <div class="hidden-xs-down navbar-md white box-shadow">
+        <%= render 'shared/navbar_2' %>
+        </div>
+        <%= yield %>
+      <!-- ############ PAGE END-->
+        </div>
+          <div class="dark dk pos-rlt">
+            <div class="p-md">
+              <%= render 'blocks/footer_1' %>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
+      <%= javascript_include_tag 'application' %>
+  <!-- ############ LAYOUT END-->
+
+    </div>
   </body>
 </html>

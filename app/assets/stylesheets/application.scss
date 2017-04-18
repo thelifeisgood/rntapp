@@ -3,11 +3,11 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "vendor/index";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 // Your CSS
 @import "layout/index";
