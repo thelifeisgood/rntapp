@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'pages/welcome'
 
+  get 'pages/accueil'
+
   get 'uis/ng_bootstrap'
 
   get 'uis/arrow'
